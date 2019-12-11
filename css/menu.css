@@ -1,0 +1,23 @@
+#menu{
+	list-style: none;
+	width: max-content;
+	font-size: 15px;
+	position: absolute;
+	top: 6%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	align-items: center;
+	padding: 0px;
+}
+#menu li{
+	width: 100px;
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+#menu li:hover{
+	cursor: pointer;
+}
+

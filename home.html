@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/home.css">
+		<script src="js/Builder.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/ECMAScript.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/Tomcat.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/Ant.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/Gradle.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/Maven.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/Testing.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/loggin.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/WebServices.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/JeeDp.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="resources/JettyUndertow.js" type="text/javascript" charset="utf-8" async defer></script>
+		
+		<script src="js/SearchMotor.js" type="text/javascript" charset="utf-8" async defer></script>
+	</head>
+	<body onload="create(current);SearchMotor.init();">
+		
+		<div id="menu">
+				<ul>
+					<li id="Jetty&Undertow" onclick="create(this,jettyUndertow)">Jetty & Underthow</li>
+					<li id="Maven" onclick="create(this,maven)">Maven</li>
+					<li id="Gradle" onclick="create(this,gradle)">Gradle</li>
+					<li id="Ant" onclick="create(this,ant)">Ant</li>
+					<li id="Tomcat" onclick="create(this,tomcat)">Apache Tomcat</li>
+					<li id="home" onclick="create(this)"><img src="img/1.png" width="50px" height="50px"></li>
+					<li id="ECMAScript" onclick="create(this,ECMAScript)">ECMAScript 6</li>
+					<li id="Testing" onclick="create(this,testing)">Testing solutions</li>
+					<li id="Loggin" onclick="create(this,loggin)">Loggin solutions</li>
+					<li id="WebServices" onclick="create(this,webService)">Web services</li>
+					<li id="DesignPattern" onclick="create(this,DP)">Design Pattern JEE</li>
+				</ul>
+			</div>
+			<div id="document" style="display: none;">
+				<div id="index">
+					
+				</div>
+				<div id="content">
+		
+				</div>
+			</div>
+			<div id="homePage">
+				<svg width="100%" height="100vh">
+		            <mask id="maskLayer">
+		                <rect width="100%" height="100%" fill="#fff"></rect>
+		                <text x="12%" y="50%" id="info">TECHNOLOGIES</text>
+		            </mask>
+		       
+		            <rect id="masked" width="100%" height="100%" fill="#f5f5f5"></rect>
+	       		</svg>
+	       		<div id="search-panel">
+	       			<div class="search-box">
+					   <input type="text" name="" onkeyup="search(this)" class="search-txt" placeholder="Search..."/>
+					   <a class="search-btn">
+					    <i class="fas fa-search"></i>
+					   </a>
+				  	</div>
+				  	<div class="search-result" id="search-result">
+				  		
+				  	</div>
+	       		</div>
+				 
+	        
+	       		<video src="video/BGVIDEO.mp4" id="bg" autoplay loop></video>
+			</div>
+	</body>
+	<script src="js/Main.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>
